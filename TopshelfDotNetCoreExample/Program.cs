@@ -10,6 +10,7 @@ namespace TopshelfDotNetCoreExample
         {
             HostFactory.Run(windowsService =>
             {
+                // this is test code example 
                 windowsService.Service<ServiceExample>(s =>
                 {
                     s.ConstructUsing(service => new ServiceExample());
